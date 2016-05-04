@@ -5,8 +5,10 @@ public class Position {
 	private int y;
 
 	public Position(int x, int y) {
-		this.setX(x);   
+		this.setX(x);   //qualify blablbal
 		this.setY(y);
+		
+
 	}
 
 	/**
@@ -35,11 +37,6 @@ public class Position {
 	 */
 	public void setY(int y) {
 		this.y = y;
-	}
-	
-	public String toString(){
-		String string = "(" + x + "," + y + ")";
-		return string;
 	}
 
 }

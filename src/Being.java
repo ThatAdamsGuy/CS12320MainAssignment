@@ -27,4 +27,5 @@ public interface Being {
  * @param location
  */
  public void setLocation(Position location);
+ 
 }

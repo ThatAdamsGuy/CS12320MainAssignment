@@ -1,6 +1,14 @@
 
 public class Zap implements Being {
 
+	private String name;
+	private boolean actedThisTurn;
+	
+	public Zap(String inName){
+		name = inName;
+		actedThisTurn = false;
+	}
+	
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
@@ -22,6 +30,12 @@ public class Zap implements Being {
 	@Override
 	public void setLocation(Position location) {
 		// TODO Auto-generated method stub
+		
+	}
+	
+	public String toString(){
+		String string = "ZAP: Name = " + name;
+		return string;
 		
 	}
 
