@@ -1,4 +1,8 @@
-import java.util.ArrayList;
+package uk.ac.aber.dcs.haa14;
+
+/**
+ * @author Harry Adams
+ */
 
 /**
 * Represents an inhabitant of GridWorld
@@ -30,10 +34,42 @@ public interface Being {
  * @param location
  */
  public void setLocation(Position location);
-public void setDead(boolean death);
+/**
+ * Checks if dead
+ * @return
+ */
 public boolean isDead();
+/**
+ * Sets the being as has moved or not
+ * @param in
+ */
 public void hasMoved(Boolean in);
+/**
+ * Checks if it's moved
+ * @return
+ */
 public boolean checkHasMoved();
+/**
+ * sets being to dead
+ * @param death
+ */
 void setDead(Boolean death);
- 
+/**
+ * returns gender
+ * @return
+ */
+public char getGender();
+/**
+ * Returns whether being can act
+ * @return
+ */
+public boolean getCanAct();
+/**
+ * Modifies whether being can act
+ * @param b
+ */
+public void setCanAct(boolean b);
+
 }
+
+

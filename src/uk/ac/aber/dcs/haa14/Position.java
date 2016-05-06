@@ -1,3 +1,4 @@
+package uk.ac.aber.dcs.haa14;
 
 public class Position {
 
@@ -37,6 +38,9 @@ public class Position {
 		this.y = y;
 	}
 	
+	/**
+	 * toString of position (gives co-ordinates as a grid reference
+	 */
 	public String toString(){
 		String string = "(" + x + "," + y + ")";
 		return string;
