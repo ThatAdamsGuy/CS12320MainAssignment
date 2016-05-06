@@ -1,18 +1,20 @@
 
-public class Zap implements Being {
+public class Zap extends Creature {
 
 	private String name;
+	private Position currentPos;
 	private boolean actedThisTurn;
 	
-	public Zap(String inName){
+	public Zap(String inName, Position pos){
 		name = inName;
+		currentPos = pos;
 		actedThisTurn = false;
 	}
 	
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return null;
+		return name;
 	}
 
 	@Override
@@ -24,7 +26,7 @@ public class Zap implements Being {
 	@Override
 	public Position getLocation() {
 		// TODO Auto-generated method stub
-		return null;
+		return currentPos;
 	}
 
 	@Override
@@ -34,7 +36,7 @@ public class Zap implements Being {
 	}
 	
 	public String toString(){
-		String string = "ZAP: Name = " + name;
+		String string = "ZAP: Name = " + name + ". Position: " + currentPos.toString() + ".";
 		return string;
 		
 	}

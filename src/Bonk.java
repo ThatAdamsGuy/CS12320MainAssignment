@@ -1,13 +1,14 @@
+import java.util.ArrayList;
 
-public class Bonk implements Being {
+public class Bonk extends Creature {
 	
-	private char gender;
-	private String name;
-	private boolean canMate;
-	private boolean canAct;
-	private int xPos;
-	private int yPos;
-	private Position currentPos;
+	private char gender;			//Male or female
+	private String name;			//Unique identifier
+	private boolean canMate;		//Set to true at start of turn (not including first), false once mated
+	private boolean canAct;			//Has it already acted this turn?
+	private boolean dead;			//If dead, will not act
+	private Position currentPos;	//Current position of the bonk
+	private boolean hasMoved;
 	
 	public Bonk(String inName, char gen, Position pos){
 		name = inName;
@@ -15,26 +16,27 @@ public class Bonk implements Being {
 		currentPos = pos;
 		canMate = false;
 		canAct = false;
+		dead = false;
+		hasMoved = false;
 	}
 	
 	public void setCanMate(boolean mate){
 		canMate = mate;
 	}
 	
-	public void setActedThisTurn(boolean act){
-		
+	public void setCanAct(boolean act){
+		canAct = act;
 	}
 
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return null;
+		return name;
 	}
 
-	@Override
-	public void act() throws CannotActException {
+	public void act(ArrayList<Being> thisCell) throws CannotActException {
 		// TODO Auto-generated method stub
-		
+		ArrayList<Being> cell = thisCell;
 	}
 
 	@Override
@@ -54,5 +56,31 @@ public class Bonk implements Being {
 		String string = "BONK: Name = " + name + ". Gender: " + gender + ". Breedable? " + canMate + ". Can act? " + canAct + ". Position: " + currentPos.toString() + ".";
 		return string;
 		
+	}
+	
+	@Override
+	public void setDead(Boolean death){
+		dead = death;
+		this.name = name + 'D';
+	}
+	
+	public boolean isDead(){
+		return dead;
+	}
+
+	@Override
+	public void act() throws CannotActException {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public boolean checkHasMoved(){
+		return hasMoved;
+	}
+	
+	@Override
+	public void hasMoved(Boolean in){
+		hasMoved = in;
 	}
 }

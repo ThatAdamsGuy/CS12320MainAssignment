@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
 * Represents an inhabitant of GridWorld
 * @author cwl
@@ -13,6 +15,7 @@ public interface Being {
  /**
  * When called the Being does its stuff, e.g. move. So this represents behaviour.
  * What this is will vary between different kinds of Being
+ * @param world 
  * @throws CannotActException Thrown if the state of the Being prevents it
  * from acting, e.g. it is dead
  */
@@ -27,5 +30,10 @@ public interface Being {
  * @param location
  */
  public void setLocation(Position location);
+public void setDead(boolean death);
+public boolean isDead();
+public void hasMoved(Boolean in);
+public boolean checkHasMoved();
+void setDead(Boolean death);
  
 }

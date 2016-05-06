@@ -1,0 +1,42 @@
+THE PREVIOUS GAME
+~~~~~~~~~~~~~~~~~
+
+
+TURN 1
+~~~~~~~~
+B2 has moved from (7,18) to (8,18)
+B1 has moved from (8,9) to (9,8)
+Z2 stayed at (10,19)
+Z1 stayed at (18,5)
+
+TURN 2
+~~~~~~~~
+Z2 stayed at (10,19)
+Z1 has moved from (18,5) to (18,5)
+Z1 has moved from (18,5) to (18,5)
+
+TURN 3
+~~~~~~~~
+Z1 has moved from (18,5) to (18,5)
+Z1 has moved from (18,5) to (18,5)
+Z2 has moved from (10,19) to (10,19)
+
+TURN 4
+~~~~~~~~
+Z1 has moved from (18,5) to (18,5)
+Z1 has moved from (18,5) to (18,5)
+Z1 has moved from (18,5) to (18,5)
+Z1 has moved from (18,5) to (18,5)
+Z1 has moved from (18,5) to (18,5)
+Z2 has moved from (10,19) to (10,19)
+Z2 has moved from (10,19) to (10,19)
+Z2 has moved from (10,19) to (10,19)
+Z2 has moved from (10,19) to (10,19)
+Z2 has moved from (10,19) to (10,19)
+
+TURN 5
+~~~~~~~~
+Z1 has moved from (18,5) to (18,5)
+Z2 has moved from (10,19) to (10,19)
+Z2 has moved from (10,19) to (10,19)
+End of log
